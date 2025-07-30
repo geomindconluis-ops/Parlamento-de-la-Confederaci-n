@@ -1,13 +1,8 @@
-import dynamic from 'next/dynamic';
-
-const Sim = dynamic(() => import('../components/ConfederacionSim'), {
-  ssr: false
-});
-
 export default function Home() {
   return (
     <div>
-      <Sim />
+      <h1>Bienvenido a tu Simulador</h1>
+      <p>Aquí empieza tu aplicación.</p>
     </div>
-  );
+  )
 }
